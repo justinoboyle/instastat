@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.js"],"names":[],"mappings":"AAAA,OAAO,gBAAP;AACA,OAAO,2BAAP;;AAEA","file":"index.js","sourcesContent":["import 'babel-polyfill';\nimport 'babel-regenerator-runtime';\n\n// have fun"]}

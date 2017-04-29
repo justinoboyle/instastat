@@ -1,0 +1,48 @@
+{
+  "name": "instastat",
+  "version": "1.0.0",
+  "description": "An insights toolbox for Instagram. 🔧",
+  "main": "cmdl/_entry.js",
+  "main-build": "build/index.js",
+  "main-src": "src/index.js",
+  "preferGlobal": true,
+  "homepage": "https://github.com/justinoboyle/instastat",
+  "scripts": {
+    "clean": "rm -rf ./build && mkdir build",
+    "build": "npm run clean; babel -d ./build ./src -s",
+    "postinstall": "postinstall-build build \"npm run build\"",
+    "dev": "RUNDEV=y babel-watch cmdl/_entry.js",
+    "patch-release": "npm version patch && npm publish && git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justinoboyle/instastat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/justinoboyle/instastat/issues"
+  },
+  "bin": {
+    "instastat": "cmdl/instastat"
+  },
+  "author": "justinoboyle",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "babel-plugin-transform-async-to-module-method": "^6.24.1",
+    "babel-plugin-transform-regenerator": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-watch": "^2.0.5",
+    "postinstall-build": "^3.0.1"
+  },
+  "dependencies": {
+    "babel-regenerator-runtime": "^6.5.0",
+    "babel-runtime": "^6.23.0",
+    "bluebird": "^3.5.0"
+  }
+}
