@@ -24,7 +24,8 @@
     "url": "https://github.com/justinoboyle/instastat/issues"
   },
   "bin": {
-    "instastat": "cmdl/instastat"
+    "instastat": "cmdl/instastat",
+    "istat": "cmdl/instastat"
   },
   "author": "justinoboyle",
   "license": "MIT",
@@ -45,6 +46,7 @@
   "dependencies": {
     "babel-regenerator-runtime": "^6.5.0",
     "babel-runtime": "^6.23.0",
-    "bluebird": "^3.5.0"
+    "bluebird": "^3.5.0",
+    "commander": "^2.9.0"
   }
 }

@@ -8,7 +8,7 @@ An insights toolbox for Instagram. 🔧
 
   * Export follower, like, and feed data.
   * Public or private API login
-  * Output data into json, csv, sql or others
+  * Output data into json or csv.
   * Scriptable
 
 ## Getting Started
@@ -42,7 +42,7 @@ ISTAT-AUTH=~/auth/instagram.json
 Export a full list of followers to a .csv file:
 
 ```bash
-$ istat export followers --user @example --format csv > file.csv
+$ istat --export followers --user @example --format csv > file.csv
 $ cat file.csv
 username,fullname,about,followercount,followingcount
 @genericuser,"Generic User","I am a generic user",300,320
