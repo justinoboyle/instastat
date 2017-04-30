@@ -24,8 +24,8 @@
     "url": "https://github.com/justinoboyle/instastat/issues"
   },
   "bin": {
-    "instastat": "cmdl/instastat",
-    "istat": "cmdl/instastat"
+    "instastat": "./cmdl/instastat",
+    "istat": "./cmdl/instastat"
   },
   "author": "justinoboyle",
   "license": "MIT",
@@ -50,12 +50,15 @@
     "cli-spinners": "^1.0.0",
     "colors": "^1.1.2",
     "commander": "^2.9.0",
+    "csv": "^1.1.1",
+    "csv-generate": "^1.0.0",
     "express": "^4.15.2",
     "fs-promise": "^2.0.2",
     "homedir": "^0.6.0",
     "inquirer": "^3.0.6",
     "instagram-node": "^0.5.8",
     "instagram-private-api": "^0.5.16",
+    "json2csv": "^3.7.3",
     "ora": "^1.2.0",
     "portscanner": "^2.1.1"
   }

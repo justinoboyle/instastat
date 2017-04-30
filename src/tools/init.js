@@ -13,7 +13,7 @@ export default function () {
     return new Promise(async (resolve, reject) => {
         let answers = await askQuestions();
         try {
-            await writeToFile(answers);
+            //await writeToFile(answers);
             resolve(answers);
         } catch (e) {
             reject(e);

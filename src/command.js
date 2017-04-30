@@ -6,5 +6,6 @@ export default () => program
     .description(global.pkg.description)
     .option('--init', 'Interactive authfile generator.')
     .option('-u, --user <n>', 'Specify a user to be the property to perform actions upon.')
+    .option('--auth <n>', 'Specify a location for the auth file. Same as the ISTAT-AUTH launch argument.')
     .option('--export <n>', 'Export a specific subproperty from the property selected.')
     .option('--format <n>', 'Specify the format to use to export the data into stdout. (json/csv)', /^(json|csv)$/i)
